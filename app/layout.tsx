@@ -1,29 +1,40 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Comfortaa, Varela_Round } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// 1. Cargamos la fuente para títulos
+const comfortaa = Comfortaa({
   subsets: ["latin"],
+  variable: "--font-comfortaa",
+  weight: ["400", "700"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// 2. Cargamos la fuente para textos generales
+const varelaRound = Varela_Round({
   subsets: ["latin"],
+  variable: "--font-varela",
+  weight: ["400"],
+  display: "swap",
 });
 
+// 3. Metadatos de la pestaña del navegador
 export const metadata: Metadata = {
-  title: "BorreHotel - Paseos y cuidado canino profesional",
-  description: "Paseos y cuidado canino profesional para tu mascota. Atención personalizada, rutas seguras y seguimiento en tiempo real.",
+  title: "BAGTAUR | Dog Walking & Spa",
+  description: "Servicio y atención basado en el cariño, la responsabilidad y el respeto hacia los animales en la ZMG.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+// 4. Componente envoltorio principal de la app
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="es" className={`${comfortaa.variable} ${varelaRound.variable}`}>
+      <body className="font-sans bg-bagtaur-cream text-bagtaur-dark antialiased">
+        {children}
+      </body>
     </html>
   );
 }
