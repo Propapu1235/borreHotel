@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${comfortaa.variable} ${varelaRound.variable}`}>
+    <html lang="es" suppressHydrationWarning className={`${comfortaa.variable} ${varelaRound.variable}`}>
       <body className="font-sans bg-bagtaur-cream text-bagtaur-dark antialiased">
         {children}
       </body>

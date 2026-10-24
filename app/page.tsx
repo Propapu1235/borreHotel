@@ -8,20 +8,21 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
     
           {/* Logo oficial BAGTAUR */}
-          <a href="#" className="flex items-center">
+          <a href="#inicio" className="flex items-center">
             <Image
             src="/bagtaur-headerr.png" /* Si guardaste en .svg, cambia aquí a .svg */
             alt="BAGTAUR - Spa y Paseos"
             width={300}
             height={100}
-            className="h-[50px] w-auto object-contain"
+            className="h-12.5 w-auto object-contain"
             priority
           />
         </a>
 
         {/* Botón de acción */}
         <a
-          href="#contacto"
+          href="https://wa.me/5213319697962?text=%C2%A1Hola!%20Quiero%20agendar%20mi%20paseo%20de%20prueba"
+          target="_blank"
           className="rounded-full bg-bagtaur-green px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:opacity-90 transition duration-200"
         >
           Paseo de prueba
@@ -30,12 +31,8 @@ export default function Home() {
     </header>
 
       {/* Sección Hero (Portada principal) */}
-      <section className="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
-        <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-bagtaur-dark bg-bagtaur-sand/50 rounded-full">
-          Servicio a domicilio en la ZMG 🐾
-        </span>
-        
-        <h1 className="font-['Comfortaa',sans-serif] text-4xl sm:text-6xl font-bold text-[#eebc98] mb-6 leading-tight">
+      <section className="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">    
+        <h1 className="font-['Comfortaa',sans-serif] text-4xl sm:text-6xl font-bold text-bagtaur-dark mb-6 leading-tight">
           Experiencias diseñadas <br className="hidden sm:block" />
           para el bienestar de tu perro.
         </h1>
