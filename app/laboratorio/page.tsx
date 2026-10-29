@@ -15,12 +15,12 @@ export default function Laboratorio() {
         🧪 Área de Pruebas
         </h1>
 
-        <div className="flex flex-col sm:flex-row ">
+        <div className="border-2 border-red-600 bg-white p-4 rounded-xl flex flex-col sm:flex-row mb-8 gap-6">
 
         </div>
 
         {/* Aquí adentro puedes empezar a crear tus <div> para practicar la Fórmula de las 3 capas */}
-        <div className="border-2 border-red-500 bg-white p-4 rounded-xl">
+        <div className="border-2 border-red-800 bg-white p-4 rounded-xl">
              <p className="text-slate-600">Mi primera caja de prueba</p>
         </div>
 
