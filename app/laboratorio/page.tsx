@@ -26,6 +26,21 @@ export default function Laboratorio() {
              <p className="text-black">Este es otro parrafo de prueba</p>
         </div>
 
+        <div className="border-2 border-red-800 bg-white p-6 mt-12 w-full max-w-lg mx-auto rounded-xl"> 
+            <h2 className="text-xl font-bold text-center text-slate-800">
+                Probar los limites
+            </h2>
+            <p className="text-slate-600 mt-2 text-center">
+                Estira la pantalla. Esta caja dejará de crecer cuando alcance el tamaño "sm" y se mantendrá centrada.
+            </p>
+        </div>
+
+        <div className="relative w-24 h-24 bg-gray-300 rounded-full flex items-center justify-center mx-auto mt-12 shadow-sm">
+            <span className="text-gray-500 font-bold">Foto</span>
+
+            <div className="absolute bottom-17 -right-1 w-6 h-6 bg-green-800 rounded-full border-4 border-white"></div>
+        </div>
+
     </main>
   );
 }
